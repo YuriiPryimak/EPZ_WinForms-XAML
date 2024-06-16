@@ -1,0 +1,48 @@
+﻿<Window x:Class="FoodDelivery.McDonald_sWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoodDelivery"
+         mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="DeliveryFood" Height="450" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="10">
+            <TextBlock Text="Бургери" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <CheckBox Content="Чізбургер" Margin="0,0,0,5"/>
+            <CheckBox Content="Вегетаріанський бургер" Margin="0,0,0,5"/>
+            <CheckBox Content="Гамбургер" Margin="0,0,0,5"/>
+            <CheckBox Content="МакЧікен Бекон" Margin="0,0,0,5"/>
+            
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Напої" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <CheckBox Content="Кола" Margin="0,0,0,5"/>
+            <CheckBox Content="Сік" Margin="0,0,0,5"/>
+            <CheckBox Content="Фанта" Margin="0,0,0,5"/>
+            <CheckBox Content="Кава" Margin="0,0,0,5"/>
+            
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Margin="10">
+            <TextBlock Text="Десерти" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <CheckBox Content="Міні донати з шоколадом" Margin="0,0,0,5"/>
+            <CheckBox Content="Морозиво ріжок" Margin="0,0,0,5"/>
+            <CheckBox Content="МакПиріг Крем-Чорницяе" Margin="0,0,0,5"/>
+            <CheckBox Content="Макфлурі КІТ КАТ Карамель" Margin="0,0,0,5"/>
+
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20">
+            <Button Click="Button_Delivery" Content="Замовити" Width="100" Height="30" Margin="10"/>
+            <Button Click="Button_Back" Content="Повернутись назад" Width="159" Height="30" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
